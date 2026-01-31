@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Rana | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Aryan Rana</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="about">
+    <h2>About Me</h2>
+    <img src="profile.png" alt="Aryan Rana" class="about-img">
+    <p>I am a computer science student.</p>
+    <p>I am learning MERN stack development.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Branch</th>
+            <th>Degree</th>
+            <th>College</th>
+        </tr>
+        <tr>
+            <td>2027</td>
+            <td>CSE</td>
+            <td>B.Tech</td>
+            <td>LPU</td>
+        </tr>
+    </table>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <ol>
+        <li>
+            <h3>Portfolio Website</h3>
+            <p>Tech: HTML, CSS</p>
+        </li>
+        <li>
+            <h3>Contact Tracer App</h3>
+            <p>Tech: C++</p>
+        </li>
+    </ol>
+</section>
+
+<section>
+    <h2>Contact Me</h2>
+
+    <form id="form">
+        <label for="name">Name</label>
+        <input id="name" type="text">
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <small class="error" id="emailError"></small>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5"></textarea>
+        <small class="error" id="messageError"></small>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
