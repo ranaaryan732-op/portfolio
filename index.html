@@ -1,96 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Rana | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aryan Rana | Cybersecurity Student | LPU</title>
+
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Aryan Rana</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-    </nav>
-</header>
+  <!-- Premium Academic Background -->
+  <div class="bg-grid"></div>
+  <div class="bg-gradient-academic"></div>
+  
+  <div class="container">
 
-<main>
+    <!-- =================================== -->
+    <!-- SIDEBAR - ACADEMIC PROFILE CARD     -->
+    <!-- =================================== -->
+    <aside class="sidebar" data-sidebar data-aos="fade-right" data-aos-duration="800">
+      
+      <div class="sidebar-header">
+        <div class="institution-badge">
+          <i class="fas fa-university"></i>
+          <span>Lovely Professional University</span>
+        </div>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch theme">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
 
-<section id="about">
-    <h2>About Me</h2>
-    <img src="profile.png" alt="Aryan Rana" class="about-img">
-    <p>I am a computer science student.</p>
-    <p>I am learning MERN stack development.</p>
-</section>
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <div class="avatar-frame">
+          <div class="avatar-ring"></div>
+          <div class="avatar-glow"></div>
+          <img src="images/aryan-photo.jpg" alt="Aryan Rana" class="avatar" onerror="this.src='https://ui-avatars.com/api/?name=Aryan+Rana&background=1e40af&color=fff&size=200'">
+        </div>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ol>
-</section>
+        <div class="profile-info">
+          <h1 class="profile-name">Aryan Rana</h1>
+          <p class="profile-title">Cybersecurity Student</p>
+          <div class="profile-meta">
+            <span><i class="fas fa-id-card"></i> Reg. No: 12418013</span>
+            <span><i class="fas fa-calendar-alt"></i> 2024-2027</span>
+          </div>
+        </div>
 
-<section id="education">
-    <h2>Education</h2>
-    <table>
-        <tr>
-            <th>Year</th>
-            <th>Branch</th>
-            <th>Degree</th>
-            <th>College</th>
-        </tr>
-        <tr>
-            <td>2027</td>
-            <td>CSE</td>
-            <td>B.Tech</td>
-            <td>LPU</td>
-        </tr>
-    </table>
-</section>
+        <button class="expand-btn" data-sidebar-btn>
+          <span>View Contact Details</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <ol>
-        <li>
-            <h3>Portfolio Website</h3>
-            <p>Tech: HTML, CSS</p>
-        </li>
-        <li>
-            <h3>Contact Tracer App</h3>
-            <p>Tech: C++</p>
-        </li>
-    </ol>
-</section>
+      <!-- Contact Details (Expandable) -->
+      <div class="sidebar-contact">
+        <div class="divider"></div>
 
-<section>
-    <h2>Contact Me</h2>
+        <div class="contact-section">
+          <h4 class="contact-heading">
+            <i class="fas fa-address-card"></i>
+            Contact Information
+          </h4>
+          
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Email</span>
+                <a href="mailto:ranaaryan732@gmail.com" class="contact-value">ranaaryan732@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Phone</span>
+                <a href="tel:+917876516224" class="contact-value">+91 78765 16224</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Hamirpur, Himachal Pradesh</span>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Program</span>
+                <span class="contact-value">B.Tech CSE</span>
+                <span class="contact-sub">CGPA: 6.24 | 2nd Year</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <form id="form">
-        <label for="name">Name</label>
-        <input id="name" type="text">
-        <small class="error" id="nameError"></small>
+        <div class="divider"></div>
 
-        <label for="email">Email</label>
-        <input id="email" type="email">
-        <small class="error" id="emailError"></small>
+        <!-- Social & Coding Profiles -->
+        <div class="social-section">
+          <h4 class="contact-heading">
+            <i class="fas fa-share-alt"></i>
+            Professional Profiles
+          </h4>
+          
+          <div class="social-grid">
+            <a href="https://github.com/ranaaryan732-op" target="_blank" class="social-btn github">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ranaaryan732/" target="_blank" class="social-btn linkedin">
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" rows="5"></textarea>
-        <small class="error" id="messageError"></small>
+          <div class="coding-profiles">
+            <a href="#" target="_blank" class="coding-btn">
+              <i class="fas fa-code"></i> LeetCode
+            </a>
+            <a href="#" target="_blank" class="coding-btn">
+              <i class="fab fa-hackerrank"></i> HackerRank
+            </a>
+            <a href="#" target="_blank" class="coding-btn">
+              <i class="fas fa-terminal"></i> GFG
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
 
-        <button type="submit">Submit</button>
-    </form>
-</section>
+    <!-- =================================== -->
+    <!-- MAIN CONTENT - ACADEMIC PORTFOLIO   -->
+    <!-- =================================== -->
+    <main class="main-content">
 
-</main>
+      <!-- Navigation - University Style -->
+      <nav class="navbar" data-aos="fade-down" data-aos-duration="600">
+        <div class="nav-brand">
+          <i class="fas fa-shield-hal"></i>
+          <span>Academic Portfolio</span>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <button class="nav-link active" data-nav-link="about">About</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-nav-link="education">Education</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-nav-link="projects">Projects</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-nav-link="certifications">Certifications</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" data-nav-link="contact">Contact</button>
+          </li>
+        </ul>
+      </nav>
 
-<script src="script.js"></script>
+      <!-- ============== ABOUT SECTION ============== -->
+      <section class="content-section about active" id="about" data-page="about">
+        
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Academic Profile</h2>
+          <div class="title-accent"></div>
+          <p class="section-subhead">Cybersecurity Student • Lovely Professional University</p>
+        </div>
+
+        <!-- Academic Summary Cards -->
+        <div class="academic-grid">
+          
+          <div class="academic-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="academic-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h3>Program Overview</h3>
+            <p>Pursuing Bachelor of Technology in Computer Science & Engineering with specialization in Cybersecurity. Maintaining academic progress with focus on network security and DSA.</p>
+          </div>
+
+          <div class="academic-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="academic-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>Career Objective</h3>
+            <p>Aspiring Security Analyst seeking to leverage strong foundation in DSA, network security, and programming to protect digital infrastructure and solve complex security challenges.</p>
+          </div>
+
+          <div class="academic-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="academic-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Academic Achievements</h3>
+            <p>250+ DSA problems solved on LeetCode, HackerRank & GFG. Certified in Generative AI (Infosys) and DSA (W3 Grades). Completed ChatGPT Prompt Engineering course.</p>
+          </div>
+        </div>
+
+        <!-- Technical Competencies -->
+        <div class="competencies-section" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="section-subtitle">
+            <i class="fas fa-cogs"></i>
+            Technical Competencies
+          </h3>
+          
+          <div class="competencies-grid">
+            
+            <div class="competency-group">
+              <h4><i class="fas fa-code"></i> Programming Languages</h4>
+              <div class="skills-list">
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">SQL</span>
+              </div>
+            </div>
+
+            <div class="competency-group">
+              <h4><i class="fas fa-shield-alt"></i> Cybersecurity</h4>
+              <div class="skills-list">
+                <span class="skill-badge">Network Security</span>
+                <span class="skill-badge">Cryptography Basics</span>
+                <span class="skill-badge">Ethical Hacking</span>
+                <span class="skill-badge">Security Fundamentals</span>
+              </div>
+            </div>
+
+            <div class="competency-group">
+              <h4><i class="fas fa-layer-group"></i> Frameworks & Libraries</h4>
+              <div class="skills-list">
+                <span class="skill-badge">Bootstrap</span>
+                <span class="skill-badge">Tailwind CSS</span>
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">React.js</span>
+              </div>
+            </div>
+
+            <div class="competency-group">
+              <h4><i class="fas fa-tools"></i> Development Tools</h4>
+              <div class="skills-list">
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">Git/GitHub</span>
+                <span class="skill-badge">VS Code</span>
+                <span class="skill-badge">Wireshark</span>
+              </div>
+            </div>
+
+            <div class="competency-group">
+              <h4><i class="fas fa-brain"></i> AI & DSA</h4>
+              <div class="skills-list">
+                <span class="skill-badge">Generative AI</span>
+                <span class="skill-badge">Prompt Engineering</span>
+                <span class="skill-badge">Data Structures</span>
+                <span class="skill-badge">Algorithms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== EDUCATION SECTION ============== -->
+      <section class="content-section education" id="education" data-page="education">
+        
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Education & Training</h2>
+          <div class="title-accent"></div>
+          <p class="section-subhead">Academic Journey • Professional Development</p>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="education-timeline" data-aos="fade-up" data-aos-delay="50">
+          
+          <div class="timeline-card">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-badge current">Current</span>
+                <span class="timeline-date">2024 — 2027</span>
+              </div>
+              <h3>Bachelor of Technology - Computer Science & Engineering</h3>
+              <p class="timeline-institution">Lovely Professional University, Punjab</p>
+              <div class="timeline-details">
+                <span><i class="fas fa-chevron-right"></i> CGPA: 6.24</span>
+                <span><i class="fas fa-chevron-right"></i> Specialization: Cybersecurity</span>
+                <span><i class="fas fa-chevron-right"></i> Relevant Coursework: Network Security, DSA, DBMS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-badge completed">Completed</span>
+                <span class="timeline-date">2022 — 2024</span>
+              </div>
+              <h3>Intermediate (12th) - Science Stream</h3>
+              <p class="timeline-institution">G.H.P.C Polytechnic, Hamirpur (H.P)</p>
+              <div class="timeline-details">
+                <span><i class="fas fa-chevron-right"></i> Percentage: 72%</span>
+                <span><i class="fas fa-chevron-right"></i> Subjects: Physics, Chemistry, Mathematics</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-badge completed">Completed</span>
+                <span class="timeline-date">2020 — 2021</span>
+              </div>
+              <h3>Matriculation (10th)</h3>
+              <p class="timeline-institution">D.A.V Public School, Hamirpur (H.P)</p>
+              <div class="timeline-details">
+                <span><i class="fas fa-chevron-right"></i> Percentage: 61%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Training -->
+        <div class="training-section" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="section-subtitle">
+            <i class="fas fa-certificate"></i>
+            Professional Training
+          </h3>
+          
+          <div class="training-grid">
+            
+            <div class="training-card">
+              <div class="training-icon">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <div class="training-content">
+                <div class="training-meta">
+                  <span class="training-date">Jul 2025</span>
+                </div>
+                <h4>Data Structures & Algorithms</h4>
+                <p class="training-org">W3 Grades</p>
+                <p class="training-desc">Completed intensive training with 100+ DSA problems solved. Mastered arrays, linked lists, trees, and graph algorithms.</p>
+                <a href="https://drive.google.com/file/d/18GorsUSucpes1xap7gboQynhQpT413XK/view?usp=sharing" target="_blank" class="training-link">
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </a>
+              </div>
+            </div>
+
+            <div class="training-card">
+              <div class="training-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="training-content">
+                <div class="training-meta">
+                  <span class="training-date">2025</span>
+                </div>
+                <h4>Generative AI</h4>
+                <p class="training-org">Infosys Private Limited</p>
+                <p class="training-desc">Applied DSA concepts in Java with focus on prompt engineering and AI integration. Completed hands-on projects.</p>
+                <a href="https://drive.google.com/file/d/1Xe3JA6jsrVsOs9h9aBmkcWhronSH613B/view?usp=sharing" target="_blank" class="training-link">
+                  <i class="fas fa-external-link-alt"></i> View Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievement Highlight -->
+        <div class="achievement-highlight" data-aos="fade-up" data-aos-delay="150">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="achievement-content">
+            <h4>250+ Problems Solved Across Platforms</h4>
+            <p>LeetCode • HackerRank • GeeksforGeeks | Achieved: August 2024</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== PROJECTS SECTION ============== -->
+      <section class="content-section projects" id="projects" data-page="projects">
+        
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Academic Projects</h2>
+          <div class="title-accent"></div>
+          <p class="section-subhead">Practical Implementation • Full Stack Development</p>
+        </div>
+
+        <div class="projects-container">
+          
+          <!-- Project 1: Vingo - Food Delivery App -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="project-card-header">
+              <div class="project-icon-wrapper">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <span class="project-date-badge">Mar 2025</span>
+            </div>
+            <h3 class="project-title">Vingo — Food Delivery Platform</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">JWT</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <ul class="project-feature-list">
+              <li><i class="fas fa-check-circle"></i> Developed full-stack food delivery platform with real-time order tracking</li>
+              <li><i class="fas fa-check-circle"></i> Implemented multi-role authentication (Admin, Restaurant, Delivery Partner, User)</li>
+              <li><i class="fas fa-check-circle"></i> Optimized RESTful APIs achieving 40% faster response times</li>
+              <li><i class="fas fa-check-circle"></i> Built responsive frontend using React.js with Redux state management</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://vingo-1-xpeu.onrender.com/" target="_blank" class="project-btn primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/ranaaryan732-op/vingo-food-delivery" target="_blank" class="project-btn secondary">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Railway Management System -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card-header">
+              <div class="project-icon-wrapper">
+                <i class="fas fa-train"></i>
+              </div>
+              <span class="project-date-badge">Aug 2025</span>
+            </div>
+            <h3 class="project-title">Railway Management System</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JDBC</span>
+              <span class="tech-tag">OOP</span>
+            </div>
+            <ul class="project-feature-list">
+              <li><i class="fas fa-check-circle"></i> Designed Java-based system for ticket booking and train scheduling</li>
+              <li><i class="fas fa-check-circle"></i> Implemented OOP principles for modular and maintainable architecture</li>
+              <li><i class="fas fa-check-circle"></i> Integrated MySQL database for passenger records and seat availability</li>
+              <li><i class="fas fa-check-circle"></i> Optimized database queries for enhanced performance</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/laxmipati786/Aryan-Rana-Railway-management-system" target="_blank" class="project-btn secondary">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== CERTIFICATIONS SECTION ============== -->
+      <section class="content-section certifications" id="certifications" data-page="certifications">
+        
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Certifications</h2>
+          <div class="title-accent"></div>
+          <p class="section-subhead">Professional Development • Industry Recognition</p>
+        </div>
+
+        <div class="cert-grid" data-aos="fade-up" data-aos-delay="50">
+          
+          <!-- Certification 1 -->
+          <div class="cert-card">
+            <div class="cert-card-inner">
+              <div class="cert-icon-large">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h4>ChatGPT Prompt Engineering for Developers</h4>
+              <p class="cert-issuer">OpenAI</p>
+              <p class="cert-date">Issued: Apr 2025</p>
+              <a href="https://drive.google.com/file/d/1G7PtJNhaMACm_u_n3-hePlsW3Vq_CjAg/view?usp=sharing" target="_blank" class="cert-verify-btn">
+                <i class="fas fa-shield-alt"></i> Verify Credential
+              </a>
+            </div>
+          </div>
+
+          <!-- Certification 2 -->
+          <div class="cert-card">
+            <div class="cert-card-inner">
+              <div class="cert-icon-large">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <h4>Computer Communications Specialization</h4>
+              <p class="cert-issuer">Coursera</p>
+              <p class="cert-date">Issued: Aug 2024</p>
+              <a href="https://www.coursera.org/account/accomplishments/specialization/K2M2NHSQLTRS" target="_blank" class="cert-verify-btn">
+                <i class="fas fa-shield-alt"></i> Verify Credential
+              </a>
+            </div>
+          </div>
+
+          <!-- Certification 3 -->
+          <div class="cert-card">
+            <div class="cert-card-inner">
+              <div class="cert-icon-large">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <h4>Data Structures & Algorithms</h4>
+              <p class="cert-issuer">W3 Grades</p>
+              <p class="cert-date">Issued: Jul 2025</p>
+              <a href="https://drive.google.com/file/d/18GorsUSucpes1xap7gboQynhQpT413XK/view?usp=sharing" target="_blank" class="cert-verify-btn">
+                <i class="fas fa-shield-alt"></i> Verify Credential
+              </a>
+            </div>
+          </div>
+
+          <!-- Certification 4 -->
+          <div class="cert-card">
+            <div class="cert-card-inner">
+              <div class="cert-icon-large">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h4>Generative AI</h4>
+              <p class="cert-issuer">Infosys Private Limited</p>
+              <p class="cert-date">Issued: 2025</p>
+              <a href="https://drive.google.com/file/d/1Xe3JA6jsrVsOs9h9aBmkcWhronSH613B/view?usp=sharing" target="_blank" class="cert-verify-btn">
+                <i class="fas fa-shield-alt"></i> Verify Credential
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== CONTACT SECTION ============== -->
+      <section class="content-section contact" id="contact" data-page="contact">
+        
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Contact & Connect</h2>
+          <div class="title-accent"></div>
+          <p class="section-subhead">Available for Opportunities • Academic Collaboration</p>
+        </div>
+
+        <div class="contact-container" data-aos="fade-up" data-aos-delay="50">
+          
+          <!-- Contact Cards -->
+          <div class="contact-cards-grid">
+            
+            <div class="contact-info-card">
+              <i class="fas fa-envelope"></i>
+              <h4>Email</h4>
+              <a href="mailto:ranaaryan732@gmail.com">ranaaryan732@gmail.com</a>
+              <span class="response-badge">Reply within 24h</span>
+            </div>
+            
+            <div class="contact-info-card">
+              <i class="fas fa-phone-alt"></i>
+              <h4>Phone</h4>
+              <a href="tel:+917876516224">+91 78765 16224</a>
+              <span class="response-badge">9AM - 6PM IST</span>
+            </div>
+            
+            <div class="contact-info-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Location</h4>
+              <p>Hamirpur, Himachal Pradesh</p>
+              <span class="response-badge">Open to Remote</span>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h3>Send Academic Inquiry</h3>
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="name" placeholder="Your Full Name" required>
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" placeholder="Your Email Address" required>
+                  <i class="fas fa-envelope"></i>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" id="subject" placeholder="Subject / Purpose">
+                <i class="fas fa-tag"></i>
+              </div>
+              <div class="form-group">
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <i class="fas fa-comment"></i>
+              </div>
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer - Academic Year -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2026 Aryan Rana • Lovely Professional University</p>
+      <p class="footer-meta">B.Tech CSE | Cybersecurity Student | Reg. No: 12418013</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
