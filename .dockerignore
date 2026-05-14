@@ -1,0 +1,14 @@
+# Git files
+.git
+.gitignore
+
+# CI/CD
+.github
+
+# Development files
+*.md
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
